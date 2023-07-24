@@ -1,0 +1,110 @@
+body{
+    margin: 0px;
+    height: 100px;
+}
+
+.main{
+    display: flex;
+    position: relat/ive;
+    /* border: 2px solid; */
+    height:100vh;
+    width: 100%;
+    /* background-image: url(./asset/party.jpg); */
+    background: url(./asset/party3.jpg) no-repeat center center fixed; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+justify-content: center;
+align-items: center;
+}
+
+.color{
+    position: absolute;
+    /* border: 2px solid green; */
+    height: 100vh;
+    width: 100%;
+    animation:blink 1s infinite;
+    /* justify-content: center; */
+
+}
+
+@keyframes blink {
+    0%{
+        
+        opacity: 55%;
+        background-color: rgb(248, 112, 22);
+    }
+    25%{
+        opacity: 55%;
+        background-color: green;
+    }
+    50%{
+        opacity: 55%;
+        background-color: red;
+    }
+    75%{
+        opacity: 55%;
+        background-color: rgb(86, 21, 236);
+    }
+    100%{
+        opacity: 55%;
+        background-color: rgb(62, 173, 136);
+    }
+    
+}
+
+.text{
+    position: absolute;
+    height: 50%;
+    width: 90%;
+    /* border: 1px solid black; */
+    /* justify-content: center; */
+    /* background-color: rgb(236, 209, 209); */
+    margin-top: 11%;
+    margin-left: 5%;
+
+    /* align-items: center; */
+    /* animation: text 1s infinite; */
+}
+
+.text1::after{
+    color: rgb(253, 253, 253);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    height: 50%;
+    width: 90%;
+    /* border: 1px solid black; */
+    /* justify-content: center; */
+    /* background-color: rgb(236, 209, 209); */
+    margin-top: 11%;
+    margin-left: 5%;
+    content: "";
+    animation: text 1s infinite;
+    font-size:100px;
+    
+}
+
+@keyframes text {
+    0%{opacity: 100%;
+        content: "ON THE FLOOR";
+    }
+
+    25%{
+        content: "DISCO DISCO DISCO";
+    }
+   
+    50%{
+        content: "ROCK THE PARTY";
+    }
+    
+   75% {
+        content: "HIT IT HARD";
+    }
+    
+    100%{
+        content: "ROCK AND ROLL";
+    }
+}
+
